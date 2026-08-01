@@ -9,7 +9,7 @@ Enter your subjects and their exam dates. The app automatically calculates revis
 - HTML, CSS, JavaScript (no frameworks, no backend)
 
 ## Live demo
-(link coming soon)
+[Try it here](https://revision-planner-5qwxg4i7e-dhruvpatel2306s-projects.vercel.app/)
 
 ## Features
 - Add/remove subjects with exam dates
