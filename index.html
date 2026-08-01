@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Revision Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Spaced Repetition Revision Planner</h1>
+
+  <form id="subject-form">
+    <input type="text" id="subject-name" placeholder="Subject / Topic name" required>
+    <input type="date" id="exam-date" required>
+    <button type="submit">Add Subject</button>
+  </form>
+  <p id="form-error" style="color: #a3453a; font-size: 13px;"></p>
+  
+  <h2>Your Subjects</h2>
+  <ul id="subject-list"></ul>
+
+  <h2>Revision Schedule</h2>
+  <div id="schedule-output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

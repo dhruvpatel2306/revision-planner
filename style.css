@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f3ec;
+  color: #2b2b28;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #2f4f3a;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #2f4f3a;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+#subject-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#subject-name,
+#exam-date {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 10px 12px;
+  border: 1px solid #c9c2b3;
+  background-color: #fffdf9;
+  border-radius: 2px;
+}
+
+#subject-name {
+  flex: 1;
+  min-width: 180px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 14px;
+  background-color: #2f4f3a;
+  color: #f7f3ec;
+  border: none;
+  padding: 10px 18px;
+  cursor: pointer;
+  border-radius: 2px;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  background-color: #24392c;
+}
+
+#subject-list {
+  list-style: none;
+}
+
+#subject-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0dacb;
+  font-size: 15px;
+}
+
+#subject-list li button {
+  background-color: transparent;
+  color: #a3453a;
+  padding: 4px 8px;
+  font-size: 13px;
+}
+
+#subject-list li button:hover {
+  background-color: #f0e4e1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead {
+  border-bottom: 2px solid #2f4f3a;
+}
+
+th {
+  text-align: left;
+  padding: 10px 8px;
+  font-weight: 600;
+  color: #2f4f3a;
+}
+
+td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e0dacb;
+}
+
+tbody tr:hover {
+  background-color: #efeadf;
+}
+
+@media (max-width: 480px) {
+  #subject-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+#form-error {
+  margin-top: 8px;
+  min-height: 18px;
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 12px;
+  }
+  th, td {
+    padding: 6px 4px;
+  }
+}
